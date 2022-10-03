@@ -8,7 +8,8 @@ const RecipesList = (props) => {
   // const instructionObj = {};
 
   const recipesResults = props.recipesResults.map((recipe, i) => {
-    console.log(recipe.instructions);
+    // console.log(recipe.instructions);
+    // console.log(recipe.sections);
     // setInstructions(recipe.instructions.display_text);
     return (
       <>
@@ -21,7 +22,7 @@ const RecipesList = (props) => {
           servingSize={recipe.num_servings}
           prepTime={recipe.prep_time_minutes}
           cookTime={recipe.cook_time_minutes}
-          ingredients={"happy"}
+          ingredients={recipe.sections}
           instructions={recipe.instructions}
         />
       </>
