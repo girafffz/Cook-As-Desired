@@ -24,3 +24,12 @@ body {
 .header {
   background-color: cadetblue;
 }
+
+img {
+  width: 200px;
+  height: 250px;
+}
+
+.recipeContainer {
+  border: 1px solid grey;
+}
