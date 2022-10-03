@@ -8,6 +8,10 @@ const RecipeCard = (props) => {
   const ingredientsList = props.ingredients;
   const instructionsList = props.instructions;
 
+  console.table(instructionsList);
+
+  // return <></>;
+
   return (
     <div className="recipeContainer" id={props.id}>
       <img src={props.src} alt={props.alt} />

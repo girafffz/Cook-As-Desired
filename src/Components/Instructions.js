@@ -5,7 +5,7 @@ const Instructions = (props) => {
 
   console.log(instructionsList);
 
-  return <div>instructions: {instructionsList}</div>;
+  return <>instructions: {JSON.stringify(instructionsList)}</>;
 };
 
 export default Instructions;
