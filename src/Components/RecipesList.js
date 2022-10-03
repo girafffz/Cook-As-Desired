@@ -17,6 +17,7 @@ const RecipesList = (props) => {
           key={i}
           src={recipe.thumbnail_url}
           alt={recipe.name}
+          recipeName={recipe.name}
           id={recipe.id}
           description={recipe.description}
           servingSize={recipe.num_servings}
