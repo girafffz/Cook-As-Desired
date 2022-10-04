@@ -11,9 +11,9 @@ const RecipeCard = (props) => {
           ? `${props.recipeName}`
           : `${props.recipeName.substring(0, 25)}...`}
       </h3>
-      <p>{`Yields: ${props.servingSize} servings`}</p>
-      <p>{`Prep time: ${props.prepTime} mins`}</p>
-      <p>{`Cook time: ${props.cookTime} mins`}</p>
+      <p>{`Servings: ${props.servingSize}`}</p>
+      <p>{`Prep: ${props.prepTime} mins`}</p>
+      <p>{`Cook: ${props.cookTime} mins`}</p>
       <div>
         <button type="button" onClick={props.onClick}>
           View More
