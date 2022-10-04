@@ -1,39 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+
+import RecipeDetails from "./RecipeDetails";
 import RecipeCard from "./RecipeCard";
 
-// component that contains all the recipe cards relevant to the search
+// RecipesList contains all the recipe cards relevant to the search
+// use states to toggle between RecipeCard and RecipeDetails
 
 const RecipesList = (props) => {
-  // const instructionArray = [];
-  // const instructionObj = {};
+  // states
+  const [recipeIsSelected, setRecipeIsSelected] = useState({});
+  const [showDetails, setShowDetails] = useState(false);
 
-  const recipesResults = props.recipesResults.map((recipe, i) => {
-    // console.log(recipe.instructions);
-    // console.log(recipe.sections);
-    // setInstructions(recipe.instructions.display_text);
+  const handleRecipeSelection = (recipe) => {
+    setRecipeIsSelected(recipe);
+    setShowDetails(true);
+  };
+
+  const recipesResultsArr = props.recipesResults.map((recipe, i) => {
     return (
-      <>
+      <div key={i}>
         <RecipeCard
-          key={i}
           src={recipe.thumbnail_url}
           alt={recipe.name}
           recipeName={recipe.name}
           id={recipe.id}
-          description={recipe.description}
           servingSize={recipe.num_servings}
           prepTime={recipe.prep_time_minutes}
           cookTime={recipe.cook_time_minutes}
-          ingredients={recipe.sections}
-          instructions={recipe.instructions}
+          onClick={() => {
+            handleRecipeSelection(recipe);
+          }}
         />
-      </>
+      </div>
     );
   });
 
   return (
     <div>
-      List of Recipes
-      {recipesResults}
+      {showDetails ? (
+        <RecipeDetails
+          recipe={recipeIsSelected}
+          onClick={() => {
+            setShowDetails(false);
+          }}
+        />
+      ) : (
+        <>
+          <h2>List of Recipes</h2>
+          {recipesResultsArr}
+        </>
+      )}
     </div>
   );
 };
