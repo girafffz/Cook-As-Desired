@@ -3,7 +3,7 @@ import React from "react";
 // returns ordered list of instructions to be shown in recipe details
 
 const Instructions = (props) => {
-  const instructionsArr = props.instructions;
+  const instructionsArr = props.instructionsList;
 
   const stepsArr = [];
 
