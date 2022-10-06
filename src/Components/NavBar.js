@@ -7,8 +7,6 @@ import logo from "../images/cook_as_desired_logo.png";
 // contains the title
 
 const NavBar = (props) => {
-  // console.log(props);
-
   return (
     <>
       <div className="navbar-top"></div>
