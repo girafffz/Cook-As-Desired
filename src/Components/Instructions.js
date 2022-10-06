@@ -23,7 +23,7 @@ const Instructions = (props) => {
 
   return (
     <div>
-      <h3>Instructions</h3>
+      <h3 className="mb-4 mt-4">Instructions</h3>
       <ol>{stepsArr}</ol>
     </div>
   );

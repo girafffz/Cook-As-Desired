@@ -13,23 +13,60 @@ body {
   background-color: whitesmoke;
 }
 
-.centered {
+/* .centered {
   margin: 3rem auto;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .header {
-  background-color: cadetblue;
+  color: white;
 }
 
-img {
-  width: 200px;
-  height: 250px;
+.card-img {
+  height: 180px;
+  object-fit: cover;
 }
 
-.recipeContainer {
-  border: 1px solid grey;
+button,
+.btn {
+  border: 1px solid gray;
+}
+
+/* .row {
+  border: 1px solid red;
+} */
+
+.card {
+  /* border: 1px solid green; */
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px lightgrey;
+}
+
+.navbar-top {
+  background-color: #5b493f;
+  height: 10px;
+}
+
+.logo {
+  object-fit: cover;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.home-web-banner {
+  width: 100%;
+}
+
+.detail-img {
+  width: 700px;
+  margin: 30px 0;
+}
+
+.search {
+  width: 350px;
+  margin-left: 50px;
 }

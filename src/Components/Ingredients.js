@@ -21,7 +21,7 @@ const Ingredients = (props) => {
 
   return (
     <div>
-      <h3>Ingredients</h3>
+      <h3 className="mb-4 mt-4">Ingredients</h3>
       <ol>{ingredientArr}</ol>
     </div>
   );
