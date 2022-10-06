@@ -4,9 +4,6 @@ import RecipesList from "../Components/RecipesList";
 import webBanner from "../images/cook-as-desired-banner.png";
 
 const Home = (props) => {
-  console.log(props);
-  console.log(props.recipesResults);
-
   return (
     <div>
       {props.searchHasStart ? (

@@ -18,8 +18,9 @@ const RecipesList = (props) => {
 
   const recipesResultsArr = props.recipesResults.map((recipe, i) => {
     return (
-      <div key={i}>
+      <>
         <RecipeCard
+          key={i}
           src={recipe.thumbnail_url}
           alt={recipe.name}
           recipeName={recipe.name}
@@ -31,12 +32,12 @@ const RecipesList = (props) => {
             handleRecipeSelection(recipe);
           }}
         />
-      </div>
+      </>
     );
   });
 
   return (
-    <div>
+    <>
       {showDetails ? (
         <RecipeDetails
           recipe={recipeIsSelected}
@@ -45,12 +46,16 @@ const RecipesList = (props) => {
           }}
         />
       ) : (
-        <>
-          <h2>List of Recipes</h2>
-          {recipesResultsArr}
-        </>
+        <div>
+          <div className="col container">
+            <h2>List of Recipes</h2>
+            <div className="row row-cols-lg-4 g-lg-5 my-5">
+              {recipesResultsArr}
+            </div>
+          </div>
+        </div>
       )}
-    </div>
+    </>
   );
 };
 
