@@ -25,9 +25,9 @@ const RecipesList = (props) => {
           alt={recipe.name}
           recipeName={recipe.name}
           id={recipe.id}
-          servingSize={recipe.num_servings}
-          prepTime={recipe.prep_time_minutes}
-          cookTime={recipe.cook_time_minutes}
+          // servingSize={recipe.num_servings}
+          // prepTime={recipe.prep_time_minutes}
+          // cookTime={recipe.cook_time_minutes}
           onClick={() => {
             handleRecipeSelection(recipe);
           }}
@@ -48,8 +48,8 @@ const RecipesList = (props) => {
       ) : (
         <div>
           <div className="col container">
-            <h2>List of Recipes</h2>
-            <div className="row row-cols-lg-4 g-lg-5 my-5">
+            <h2 className="mt-5">List of Recipes</h2>
+            <div className="row row-cols-lg-4 g-lg-5 my-2">
               {recipesResultsArr}
             </div>
           </div>

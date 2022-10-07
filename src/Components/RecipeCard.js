@@ -3,8 +3,6 @@ import React from "react";
 // RecipeCard renders basic information of each recipe relevant to search
 
 const RecipeCard = (props) => {
-  // console.log(props);
-
   return (
     // <div className="row">
     <div className="recipe-container">
@@ -21,9 +19,9 @@ const RecipeCard = (props) => {
               ? `${props.recipeName}`
               : `${props.recipeName.substring(0, 21)}...`}
           </h5>
-          <div className="card-text mb-1">{`Servings: ${props.servingSize}`}</div>
+          {/* <div className="card-text mb-1">{`Servings: ${props.servingSize}`}</div>
           <div className="card-text mb-1">{`Prep: ${props.prepTime} mins`}</div>
-          <div className="card-text mb-1">{`Cook: ${props.cookTime} mins`}</div>
+          <div className="card-text mb-1">{`Cook: ${props.cookTime} mins`}</div> */}
           <div>
             <button type="button" className="btn mt-3" onClick={props.onClick}>
               View More
