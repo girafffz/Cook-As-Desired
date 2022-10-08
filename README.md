@@ -8,7 +8,7 @@ Cook as Desired is a web app for searching for recipes online that was developed
 
 Searching for recipes online is as simple as putting keywords into Google or your favorite culinary websites like Tasty. However, do you get distracted by the numerous flashing commercial banners that appear all over the page?
 
-Cook as Desired is my attempt to create a simple online tool that allows users to search for and read recipes without being distracted by advertisements.
+Cook as Desired is my attempt to create a simple online tool that allows users who have not install ad blockers to search for and read recipes without being distracted by advertisements.
 
 <!-- The live version of the game is accessible from this [link](https://girafffz.github.io/Tug-of-War/). -->
 
