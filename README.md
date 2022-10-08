@@ -50,3 +50,4 @@ On-hold
 # Credits and Acknowledgements
 
 - Tasty API
+- Image used for web banner by Ray Piedra, Pexels
